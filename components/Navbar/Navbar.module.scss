@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  border-bottom: 1px solid gray;
+
+  height: 4rem;
+  padding: 0 15vw;
+
+  background-color: #5225BD;
+}
+
+.buttons_container {
+  display: flex;
+}
+
+
+.button_wrapper {
+
+  .button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    margin: 0 0.2rem;
+    height: 100%;
+    background-color: transparent;
+    color: white;  
+  }
+
+  .button_bar {
+    height: 3px;
+    width: 100%;
+    background-color: #3EC97C;
+  }
+
+  *{
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

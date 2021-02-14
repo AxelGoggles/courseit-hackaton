@@ -1,12 +1,22 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import Navbar from "../components/Navbar";
+import Head from "next/head";
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <h1>ESTOY EN EL LAYOUOUUUTUTTTTT</h1>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        ></link>
+      </Head>
+      <Navbar />
       <Component {...pageProps} />
+      {/* <Footer /> */}
     </>
   );
 }
 
-export default MyApp
+export default MyApp;
