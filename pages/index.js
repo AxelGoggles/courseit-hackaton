@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import gatitos from "../data/adoptions";
 import ComponenteBobo from "../components/ComponenteBobo/ComponenteBobo";
+import Form from '../components/Form'
 
 export default function Home({ gatos, otro }) {
 
@@ -21,6 +22,7 @@ export default function Home({ gatos, otro }) {
         </h1>
 
         <ComponenteBobo />
+        <Form />
 
         <p className={styles.description}>
           Get started by editing{" "}
