@@ -26,8 +26,10 @@
     margin: 0 0.2rem;
     height: 100%;
     background-color: transparent;
-    color: white;  
+    color: white;
+    outline: 0;
   }
+
 
   .button_bar {
     height: 3px;
@@ -35,7 +37,7 @@
     background-color: #3EC97C;
   }
 
-  *{
+  * {
     &:hover {
       cursor: pointer;
     }

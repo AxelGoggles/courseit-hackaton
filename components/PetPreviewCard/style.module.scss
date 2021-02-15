@@ -14,12 +14,18 @@
         justify-content: space-between;
     }
 
-    .bottomWrapper {
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        background-image: red;
-        border-radius: 0 0 15px 15px;
-        background-position: center;
+    &:hover {
+        .petPhoto {
+            background-position: left;
+        }
     }
+}
+
+.petPhoto {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: red;
+    border-radius: 0 0 15px 15px;
+    background-position: center;
 }
