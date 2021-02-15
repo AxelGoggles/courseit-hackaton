@@ -1,12 +1,14 @@
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import Head from "next/head";
 
 
-function MyApp({ Component, pageProps }) {
+function Adoptapp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>Adoptápp - Salvá a un animalito</title>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
@@ -14,9 +16,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
 
-export default MyApp;
+export default Adoptapp;

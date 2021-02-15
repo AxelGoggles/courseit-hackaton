@@ -1,0 +1,40 @@
+.container {
+  height: 15vh;
+  padding: 2rem 15vw;
+  background-color: #5225BD;
+
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.links_container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+  a {
+    margin: 0.5rem 0;
+  }
+}
+
+.social_links_container {
+  display: flex;
+
+  a {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-left: 1rem;
+    
+    .logo {
+      max-width: 2rem;
+      max-height: 2rem;
+      *{
+        fill: white;
+      }
+    }
+  }
+}
+

@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: space-between;
 
-  position: sticky;
+  position: fixed;
   border-bottom: 1px solid gray;
 
   height: 4rem;
+  width: 100%;
   padding: 0 15vw;
 
   background-color: #5225BD;
