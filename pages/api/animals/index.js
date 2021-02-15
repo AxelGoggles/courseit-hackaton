@@ -15,7 +15,7 @@ export default async (req, res) => {
             } catch (error) {
                 res.status(400).json({ sucess:false });
             }
-            break;
+        break;
     
         case 'POST':
             try {
@@ -25,10 +25,10 @@ export default async (req, res) => {
             } catch (error) {
                 res.status(400).json({ sucess:false });
             }
-            break;
+        break;
 
         default: 
-        res.status(400).json({ sucess:false });
+            res.status(400).json({ sucess:false });
         break;
 
     }
