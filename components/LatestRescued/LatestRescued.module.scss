@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+
+  .title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .cards_container {
+    display: flex;
+  }
+}

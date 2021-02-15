@@ -1,24 +1,25 @@
 import styles from '../styles/Home.module.css'
 import gatitos from "../data/adoptions";
-import ContactForm from '../components/ContactForm'
+import Hero from "../components/Hero";
+import LatestRescued from "components/LatestRescued";
+import ContactForm from "components/ContactForm";
 
-export default function Home({ gatos, otro }) {
-
-  console.log(gatos)
-  console.log(otro)
+export default function Home({ gatos }) {
+  console.log(gatos);
 
   return (
-      <main className={styles.main}>
-        <ContactForm />
-      </main>
+    <main className={styles.main}>
+      <Hero />
+      <LatestRescued data={gatos} />
+      <ContactForm />
+    </main>
   );
 }
 
 export function getStaticProps() {
   return {
-    props: { 
-      gatos: gatitos, 
-      otro: {key:'value'} 
+    props: {
+      gatos: gatitos.slice(0, 3),
     },
   };
 }
