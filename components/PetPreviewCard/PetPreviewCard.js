@@ -1,14 +1,22 @@
 import styles from "./style.module.scss"
 
-function PetPreviewCard(props){
+function PetPreviewCard({name, age, photo}){
+
+
+
+    var imageStyle = {
+        backgroundImage: "url(" + {photo} + ")"
+      };
+      
 
     return(
     <div className={styles.cardWrapper}>
-        <div className="topWrapper">
-            <p className="petName"></p>
-            <p className="petAge">Bolin</p>
+        <div className={styles.topWrapper}>
+            <p className={styles.petName}>{name}</p>
+            <p className={styles.petAge}>{age}</p>
         </div>
-        <div className="bottomWrapper">
+        <div className={styles.bottomWrapper}>
+            <img src={photo} className={styles.petPhoto}/>
         </div>
     </div>
     )

@@ -1,7 +1,31 @@
 .cardWrapper {
-    box-shadow: 0 8px 10px 0rgb(0 0 0 / 16%), 0 -1px 2px 0rgb(0 0 0 / 10%);
-    width: 150px;
+    -webkit-box-shadow: 9px 8px 15px -4px rgba(0, 0, 0, 0.27);
+    box-shadow: 9px 8px 15px -4px rgba(0, 0, 0, 0.27);
+    width: 200px;
     height: 300px;
     border: 1px solid #D3D3D3;
-    border-radius: 10px;
+    border-radius: 15px;
+
+    margin: 15px;
+
+    .topWrapper {
+        height: 10%;
+        font-weight: 600;
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .bottomWrapper {
+        height: 90%;
+
+        .petPhoto {
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-image: red;
+            border-radius: 0 0 15px 15px;
+            background-position: center;
+        }
+    }
 }

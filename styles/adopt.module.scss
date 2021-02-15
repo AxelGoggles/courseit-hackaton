@@ -1,0 +1,14 @@
+.mainWrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+
+
+    .card {
+        margin-top: 200px;
+    }
+
+}
