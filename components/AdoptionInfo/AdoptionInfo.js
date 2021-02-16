@@ -169,11 +169,12 @@ const AdoptionInfo = ({ ref }) => {
                 </div>
             </div>
 
-            <div className={styles.buttonContainer}>
+        </form>
+
+        <div className={styles.buttonContainer}>
                 <input type="submit" value="enviar" 
                 className={styles.button} />
             </div>
-        </form>
     </section>
     )
 }
