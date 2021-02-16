@@ -1,0 +1,30 @@
+.container {
+  background-color: #5225BD;
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.button {
+  background-color: #3EC97C;
+  border-color: #3EC97C;
+  border-radius: 10px;
+  padding: 8px 50px 8px 50px;
+  text-transform: uppercase;
+  font-family: inherit;
+  color: white;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #148b4a;
+  border-color: #148b4a;
+}
+
+.button:active {
+  background-color: #148b4a;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+/*# sourceMappingURL=AdoptionForm.module.css.map */

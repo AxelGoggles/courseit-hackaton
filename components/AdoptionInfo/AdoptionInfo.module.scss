@@ -1,0 +1,99 @@
+.title{
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    
+}
+
+.subtitle{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+
+.adoptionInfo{
+    background-color: #5225BD;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    padding: 1%;
+    
+
+    .adoptionInfoForm{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        width: 100vw;
+        font-weight: lighter;
+    }
+
+    .question{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        padding: 10px;
+        text-align: start;
+        text-justify: distribute;
+        font-size: small;
+    }
+
+    p{
+        padding-bottom: 10px;
+        font-size: normal;
+    }
+
+    select{
+        width: 15vw;
+        outline-style: none;
+    }
+
+
+    .textarea{
+        background-color: #f2f2f2;
+        outline-style: none;
+    }
+}
+
+.buttonContainer{
+    // background-color: #5225BD;
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 30px;
+    position: absolute;
+    bottom: 90px;
+    right: -250px
+    
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // align-items: center;
+}
+
+
+    .button{
+        background-color: #3EC97C;
+        border-color: #3EC97C;
+        border-radius: 10px;
+
+        padding: 8px 50px 8px 50px;
+
+        text-transform: uppercase;
+        font-family: inherit;
+        color: white;
+        letter-spacing: 3px;
+        cursor: pointer;
+
+        border: none;
+        outline-style: none;
+
+    }
+
+    .button:hover {
+        background-color: #148b4a;
+        border-color: #148b4a;
+    }
+
+    .button:active {
+        background-color: #148b4a;
+        transform: translateY(4px);
+    }

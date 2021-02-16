@@ -1,0 +1,18 @@
+.mainWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 5px;
+  max-width: 1000px;
+  margin: 0 auto 0 auto;
+}
+
+.mainWrapper .card {
+  margin-top: 200px;
+}
+/*# sourceMappingURL=adopt.module.css.map */

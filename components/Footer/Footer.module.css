@@ -1,0 +1,51 @@
+.container {
+  height: 15vh;
+  padding: 2rem 15vw;
+  background-color: #5225BD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.links_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.links_container a {
+  margin: 0.5rem 0;
+}
+
+.social_links_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social_links_container a {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin-left: 1rem;
+}
+
+.social_links_container a .logo {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
+.social_links_container a .logo * {
+  fill: white;
+}
+/*# sourceMappingURL=Footer.module.css.map */

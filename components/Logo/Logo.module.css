@@ -1,0 +1,23 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
+
+.adopt {
+  color: white;
+}
+
+.app {
+  color: #3EC97C;
+}
+
+.heart {
+  margin-left: 0.2rem;
+  color: #3EC97C;
+}
+/*# sourceMappingURL=Logo.module.css.map */

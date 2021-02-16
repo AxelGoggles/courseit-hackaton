@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,QAAQ;CAWlB;;AAdD,AAKE,UALQ,CAKR,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;CACjB;;AATH,AAWE,UAXQ,CAWR,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "LatestRescued.module.scss"
+    ],
+    "names": [],
+    "file": "LatestRescued.module.css"
+}

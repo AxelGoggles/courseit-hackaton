@@ -1,0 +1,39 @@
+.title {
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.personalInfo {
+  background-color: #5225BD;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  padding: 1%;
+}
+
+.personalInfo .personalInfoForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: lighter;
+  text-align: start;
+}
+
+.personalInfo .personalInfo, .personalInfo input {
+  width: 30vw;
+  padding: 10px 10px 10px 10px;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=PersonalInfo.module.css.map */

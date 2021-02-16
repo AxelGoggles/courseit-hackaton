@@ -3,6 +3,7 @@
     width: 100vw;
     text-align: center;
     padding-bottom: 30px;
+    display: inline-block;
 }
 
     .button{
@@ -17,6 +18,9 @@
         color: white;
         letter-spacing: 3px;
         cursor: pointer;
+
+        border: none;
+        outline-style: none;
 
     }
 

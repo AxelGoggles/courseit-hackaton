@@ -1,0 +1,35 @@
+.cardWrapper {
+  -webkit-box-shadow: 9px 8px 15px -4px rgba(0, 0, 0, 0.27);
+  box-shadow: 9px 8px 15px -4px rgba(0, 0, 0, 0.27);
+  width: 200px;
+  height: 300px;
+  border: 1px solid #D3D3D3;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+.cardWrapper .topWrapper {
+  height: 10%;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.cardWrapper .bottomWrapper {
+  height: 90%;
+}
+
+.cardWrapper .bottomWrapper .petPhoto {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-image: red;
+  border-radius: 0 0 15px 15px;
+  background-position: center;
+}
+/*# sourceMappingURL=style.module.css.map */

@@ -1,178 +1,180 @@
 import React from 'react';
+import styles from './AdoptionInfo.module.scss'
+import { useForm } from 'react-hook-form'
 
-function AdoptionInfo(){
-    return(
-    <>
-    <section>
-        <h1 className="title">♥ FORMULARIO DE ADOPCIÓN ♥</h1>
-        <p id="description">Muchas gracias por tu interés en adoptar un animalito!</p>
-    </section>
+const AdoptionInfo = ({ ref }) => {
+    const { register, handleSubmit } = useForm();
 
-    <form>
-        <div>
-            <p> ¿Alguna vez adoptaste un animalito de un refugio o de la calle?</p>
-            <label for="yes"> 
-                Si
-                <input type="radio" name="didYouAdopt" value="yes" required/> 
-            </label>
+    const onSubmit = (data) => {
+        console.log(data);
+    };
 
-            <label for="no"> 
-                No
-            <input type="radio" name="didYouAdopt" value="no" required/>
-            </label>
-        </div>
+    return (
+    <section className={styles.adoptionInfo} ref={ref}>
+        <h1 className="title" className={styles.title}>♥ FORMULARIO DE ADOPCIÓN ♥</h1>
+        <p id="description" className={styles.subtitle}>Muchas gracias por tu interés en adoptar un animalito!</p>
+    
+        <form className={styles.adoptionInfoForm} onSubmit={handleSubmit(onSubmit)}>
+            <div className={styles.divContainer}>
+                <div className={styles.question}>
+                    <p> ¿Alguna vez adoptaste un animalito de un refugio o de la calle?</p>
+                    <label htmlFor="yes"> 
+                        <input ref={register({ required: true})} type="radio" name="didYouAdopt" value="yes"/> 
+                    Si
+                    </label>
 
-        <div>
-            <p> ¿Tenés mascotas actualmente?</p>
-            <label for="dog"> 
-                Perro
-                <input type="radio" name="hasPets" value="dog" required/> 
-            </label>
+                    <label htmlFor="no"> 
+                    <input ref={register({ required: true})} type="radio" name="didYouAdopt" value="no"/>
+                    No
+                    </label>
+                </div>
 
-            <label for="cat"> 
-                Gato
-            <input type="radio" name="hasPets" value="cat" required/>
-            </label>
+                <div className={styles.question}>
+                    <p> ¿Tenés mascotas actualmente?</p>
+                    <label htmlFor="dog"> 
+                        <input ref={register({ required: true})} type="radio" name="hasPets" value="dog"/> 
+                        Perro
+                    </label>
 
-            <label for="no"> 
-                No tengo
-            <input type="radio" name="hasPet" value="no" required/>
-            </label>
-        </div>
+                    <label htmlFor="cat"> 
+                    <input ref={register({ required: true})} type="radio" name="hasPets" value="cat" />
+                        Gato
+                    </label>
 
-        <div>
-            <p>¿Cuántas horas pasaría la mascota sola en el hogar?</p>
-            <label for="1hs"> 
-                Menos de 1hs
-            <input type="radio" name="hoursAlone" value="1hs" required/>
-            </label>
+                    <label htmlFor="no"> 
+                    <input ref={register({ required: true})} type="radio" name="hasPet" value="no" />
+                        No tengo
+                    </label>
+                </div>
 
-            <label for="1to3hs"> 
-                Entre 1 y 3hs
-            <input type="radio" name="hoursAlone" value="1to3hs" required/>
-            </label>
+                <div className={styles.question}>
+                    <p>¿Cuántas horas pasaría la mascota sola en el hogar?</p>
+                    <label htmlFor="1hs"> 
+                    <input ref={register({ required: true})} type="radio" name="hoursAlone" value="1hs" />
+                        Menos de 1hs
+                    </label>
 
-            <label for="4to6hs"> 
-                Entre 4 y 6hs
-            <input type="radio" name="hoursAlone" value="4to6hs" required/>
-            </label>
+                    <label htmlFor="1to3hs"> 
+                    <input ref={register({ required: true})} type="radio" name="hoursAlone" value="1to3hs" />
+                        Entre 1 y 3hs
+                    </label>
 
-            <label for="8to10"> 
-                8 to 10hs
-                <input type="radio" name="hoursAlone" value="8to10hs" required/>
-            </label>
-        </div>
+                    <label htmlFor="4to6hs"> 
+                    <input ref={register({ required: true})} type="radio" name="hoursAlone" value="4to6hs" />
+                        Entre 4 y 6hs
+                    </label>
 
-        <div>
-            <p>¿Dónde queda la mascota cuando sales de casa? </p>
-            <label for="inside">  
-                Adentro de la casa
-                <input type="checkbox" name="insideOutside" value="inside" required/>
-            </label>
+                    <label htmlFor="8to10"> 
+                        <input ref={register({ required: true})} type="radio" name="hoursAlone" value="8to10hs" />
+                        8 to 10hs
+                    </label>
+                </div>
 
-            <label for="outside"> 
-                Afuera de la casa 
-                <input type="checkbox" name="insideOutside" value="outside" required/>
-            </label>
-        </div>
+                <div className={styles.question}>
+                    <p>¿Dónde queda la mascota cuando sales de casa? </p>
+                    <label htmlFor="inside">  
+                        <input ref={register({ required: true})} type="checkbox" name="insideOutside" value="inside" />
+                        Adentro de la casa
+                    </label>
 
-        <div>
-            <label for="age"> 
+                    <label htmlFor="outside"> 
+                        <input ref={register({ required: true})} type="checkbox" name="insideOutside" value="outside" />
+                        Afuera de la casa 
+                    </label>
+                </div>
+
+                <div className={styles.question}>
                 <p>¿Edad de preferencia?</p> 
-            </label>
-            <select for="age" name="age">
-                <option value=""></option>
-                <option value="baby">Cachorro</option>
-                <option value="young">Jóven</option>
-                <option value="adult">Adulto</option>
-                <option value="senior">Grande</option>
-                <option value="none">No tengo preferencia</option>
-            </select>
-        </div>
+                        <select ref={register({ required: true})} htmlFor="age" name="age">
+                            <option value=""></option>
+                            <option value="baby">Cachorro</option>
+                            <option value="young">Jóven</option>
+                            <option value="adult">Adulto</option>
+                            <option value="senior">Grande</option>
+                            <option value="none">No tengo preferencia</option>
+                        </select>
+                </div>
 
-        
-        <div>
-            <label for="size"> 
-                <p>¿Tamaño de preferencia?</p>
-            </label>
-            <select for="size" name="size">
-                <option value=""></option>
-                <option value="small">Pequeño</option>
-                <option value="medium">Mediano</option>
-                <option value="big">Grande</option>
-                <option value="none">No tengo preferencia</option>
-            </select>
-        </div>
+                <div className={styles.question}>
+                    <p>¿Tamaño de preferencia?</p>
+                    <select ref={register({ required: true})} htmlFor="size" name="size">
+                        <option value=""></option>
+                        <option value="small">Pequeño</option>
+                        <option value="medium">Mediano</option>
+                        <option value="big">Grande</option>
+                        <option value="none">No tengo preferencia</option>
+                    </select>
+                </div>
 
-        <div>
-            <label for="sex"> 
-                <p>¿Buscas hembra o macho?</p> 
-            </label>
-            <select for="sex" name="sex">
-                <option value=""></option>
-                <option value="female">Hembra</option>
-                <option value="male">Macho</option>
-                <option value="none">No tengo preferencia</option>
-            </select>
-        </div>
+                
+            </div>
 
-        <div>
-            <p> ¿Hay niñes en el hogar? </p>
-            <label for="si"> 
-                Si
-                <input type="radio" name="kids" value="yes" required/> 
-            </label>
+            <div className={styles.divContainer}>
+                <div className={styles.question}>
+                        <p>¿Buscas hembra o macho?</p> 
+                        <select ref={register({ required: true})} htmlFor="sex" name="sex">
+                            <option value=""></option>
+                            <option value="female">Hembra</option>
+                            <option value="male">Macho</option>
+                            <option value="none">No tengo preferencia</option>
+                        </select>
+                    </div>
 
-            <label for="no"> 
-                No
-            <input type="radio" name="kids" value="no" required/>
-            </label>
-        </div>
+                <div className={styles.question}>
+                    <p> ¿Hay niñes en el hogar? </p>
+                    <label htmlFor="si"> 
+                        <input ref={register({ required: true})} type="radio" name="kids" value="yes" /> 
+                        Si
+                    </label>
 
-        <div>
-            <p> ¿El hogar cuenta con alguno de los siguientes? </p>
-            
-            <label for="balcony">
-                Balcón
-                <input type="checkbox" name="exterior" value="balcony" required/>
-            </label>
+                    <label htmlFor="no"> 
+                    <input ref={register({ required: true})} type="radio" name="kids" value="no" />
+                        No
+                    </label>
+                </div>
 
-            <label for="patio">
-                Patio
-                <input type="checkbox" name="exterior" value="patio" required/>
-            </label>
+                <div className={styles.question}>
+                    <p> ¿El hogar cuenta con alguno de los siguientes? </p>
+                    
+                    <label htmlFor="balcony">
+                        <input ref={register({ required: true})} type="checkbox" name="exterior" value="balcony" />
+                        Balcón sin red
+                    </label>
 
-            <label for="protection">
-                Tengo red en todo el hogar
-                <input type="checkbox" name="exterior" value="protection" required/>
-            </label>
-        </div>
+                    <label htmlFor="patio">
+                        <input ref={register({ required: true})} type="checkbox" name="exterior" value="patio" />
+                        Patio sin red
+                    </label>
+
+                    <label htmlFor="protection">
+                        <input ref={register({ required: true})} type="checkbox" name="exterior" value="protection" />
+                        Tengo red en todo el hogar
+                    </label>
+                </div>
 
 
-        <div>
-            <label for="owner">
-                <p>¿Quién será la persona a cargo de la mascota?</p>
-            </label>
-            <select for="owner" name="owner">
-                <option value=""></option>
-                <option value="me">Yo</option>
-                <option value="familyMember">Alguien de la familia</option>
-                <option value="other">Otro</option>
-            </select>
-        </div>
+                <div className={styles.question}>
+                    <p>¿Quién será la persona a cargo de la mascota?</p>
+                    <select ref={register({ required: true})} htmlFor="owner" name="owner">
+                        <option value=""></option>
+                        <option value="me">Yo</option>
+                        <option value="familyMember">Alguien de la familia</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </div>
 
-        <div>
-            <label for="aboutYou"> 
-                <p>Contanos por que te gustaría tener una mascota :)</p> 
-            </label>
-            <textarea for="aboutYou" rows="10" cols="50" />
-        </div>
+                <div className={styles.question}>
+                        <p>Contanos por que te gustaría tener una mascota :)</p> 
+                    <textarea ref={register({ required: true})} htmlFor="aboutYou" rows="8" cols="50" name="textarea" className={styles.textarea}/>
+                </div>
+            </div>
 
-        <button type="submit" name="submit" className="submit"> Enviar </button>
-
-    </form>
-
-    </>
+            <div className={styles.buttonContainer}>
+                <input type="submit" value="enviar" 
+                className={styles.button} />
+            </div>
+        </form>
+    </section>
     )
 }
 

@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.container .background_image {
+  background-image: url("https://i.pinimg.com/originals/2d/60/95/2d6095dbc59ba28679d00dbf5857257d.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 45%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+.container p {
+  text-align: center;
+}
+
+.container .top_container {
+  position: absolute;
+}
+
+.container .bottom_container {
+  position: absolute;
+  bottom: 5%;
+}
+
+.container .buttons_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.container button {
+  cursor: pointer;
+  margin: 5px 15px;
+  width: 275px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #411d97;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 600;
+  border: none;
+  outline: 0;
+}
+/*# sourceMappingURL=Hero.module.css.map */
