@@ -1,5 +1,7 @@
+
 import PetPreviewCard from "../PetPreviewCard";
 import styles from "./LatestRescued.module.scss";
+import AdoptionForm from '../AdoptionForm'
 
 const LatestRescued = ({ data }) => {
   return (
@@ -15,6 +17,8 @@ const LatestRescued = ({ data }) => {
           />
         ))}
       </div>
+
+      <AdoptionForm />
     </section>
   );
 };
